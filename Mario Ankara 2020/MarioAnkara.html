@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Ankara March 2020 using JS</title>
+    <script type="text/javascript" src="scripts/jquery-3.5.1.js"></script>
+    <script>
+        $(function(){
+            $("#main").css({"display":"flex","flex-direction":"row", "margin-left":"100px"});
+            $("button").css({"background-color":"black","color":"cornsilk","border-radius":"10px","margin-top":"15px","margin-left":"50px","text-align":"center"}).height("30px")
+            $("button").fadeOut(1000)
+            $("button").fadeIn(1000)
+        });
+    </script>
+</head>
+<body>
+    <div id="main">
+        <h3>Mario Ankara 2020 by Abdullah Bin Aamir</h3>
+        <button id="btn"> Start Game</button>
+    </div>
+    <canvas id="canvas" width="700" height="500"></canvas>
+    <script src="scripts/MarioAnkara.js"></script>
+</body>
+</html>
